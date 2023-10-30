@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Titillium+Web:wght@400;600;700&display=swap");
+
 body {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -14,6 +17,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 2fr repeat(20, 1fr);
+  color: white;
+  font-weight: 700;
 }
 
 .grid-container {
