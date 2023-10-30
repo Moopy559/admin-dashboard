@@ -1,21 +1,27 @@
 body {
-  border: solid red 1px;
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 100vh;
 }
 
+* {
+  outline: solid red 1px;
+}
+
 .sidebar {
   background-color: rgb(0, 162, 255);
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 2fr repeat(20, 1fr);
 }
 
 .grid-container {
   display: grid;
-  grid-template-rows: 1fr 5fr;
 }
 
-.header {
+.right-screen {
+  grid-template-rows: 1fr 5fr;
 }
 
 .main-content {
