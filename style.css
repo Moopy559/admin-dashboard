@@ -34,11 +34,13 @@ body {
 .header {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .searchbar {
   display: grid;
-  grid-template-columns: 0.5fr 3fr 1fr 0.25fr 0.25fr 1fr;
+  grid-template-columns: 0.5fr 10fr 0.5fr 0.5fr 2fr;
   align-items: center;
 }
 
@@ -51,11 +53,12 @@ body {
   border-radius: 10px;
   border: none;
   max-height: 1rem;
+  max-width: 35vw;
 }
 
 .bottombar {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
 }
 
 .bottombar button {
@@ -64,7 +67,14 @@ body {
   border-radius: 10px;
   border: none;
   max-height: 1.5rem;
+  max-width: 100px;
+  margin: 0px 10px 00px 10px;
 }
+
+.bottombar img {
+  max-height: 3rem;
+}
+
 .main-content {
   background-color: rgb(219, 219, 219);
 }
