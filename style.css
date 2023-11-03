@@ -3,7 +3,7 @@
 body {
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 6fr;
   grid-template-rows: 100vh;
   font-family: "Roboto", sans-serif;
 }
@@ -15,18 +15,35 @@ body {
 .sidebar {
   background-color: rgb(0, 162, 255);
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 2fr repeat(20, 1fr);
+  grid-template-rows: 1fr 2fr 5fr;
+  row-gap: 20px;
   color: white;
   font-weight: 700;
-  padding-left: 30px;
-  min-width: 150px;
-  font-size: 1.3rem;
+  min-width: 200px;
+  font-size: 1.2rem;
+}
+
+.sidebar > div > div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .sidebar img {
   filter: invert(100);
-  max-height: 1.3rem;
+  width: 40px;
+  height: 25px;
+  justify-self: center;
+}
+
+.dashboard {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+img.dashboard {
+  height: 60px;
 }
 
 .right-screen {
