@@ -2,25 +2,29 @@
 
 body {
   margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-  grid-template-rows: 100vh;
   font-family: "Roboto", sans-serif;
+  background-color: rgb(219, 219, 219);
 }
 
-* {
+/* * {
   outline: solid red 1px;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
 }
 
 .sidebar {
   background-color: rgb(0, 162, 255);
   display: grid;
-  grid-template-rows: 1fr 2fr 5fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
   row-gap: 20px;
   color: white;
   font-weight: 700;
   min-width: 200px;
   font-size: 1.2rem;
+  height: 100vh;
 }
 
 .sidebar > div > div {
@@ -48,10 +52,11 @@ img.dashboard {
 
 .right-screen {
   display: grid;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 150 700px;
 }
 
 .header {
+  background-color: white;
   display: grid;
   grid-template-rows: 1fr 1fr;
   padding-left: 20px;
@@ -138,13 +143,21 @@ img.dashboard {
 .main-content {
   background-color: rgb(219, 219, 219);
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 4fr 1.5fr;
   padding: 20px 20px 50px 20px;
+  /* height: 400px; */
+}
+
+.main-left {
+  display: grid;
+  grid-template-rows: 1rem auto;
 }
 
 .projects {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(2, auto);
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 20px;
   margin-right: 20px;
 }
@@ -155,7 +168,7 @@ img.dashboard {
   border-left: orange solid 5px;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
   display: grid;
-  grid-template-rows: 1fr 0.5fr;
+  grid-template-rows: 1fr 0.1fr;
   padding: 20px;
 }
 
@@ -177,29 +190,37 @@ img.dashboard {
 
 .main-right {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  justify-content: space-evenly;
+}
+
+.subheading {
+  font-weight: 700;
+  padding-bottom: 20px;
 }
 
 .announcements {
   background-color: white;
   border-radius: 5px;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
-  height: 100%;
-  margin-bottom: 20px;
-  padding: 30px;
+  padding: 10px 30px 10px 30px;
+  font-size: 0.8rem;
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .announcements hr {
   border-top: solid 1px rgb(211, 211, 211);
-  margin: 20px 0px 20px 0px;
+  width: 100%;
 }
 
 .trending {
   background-color: white;
   border-radius: 5px;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
-  height: 100%;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   row-gap: 10px;
@@ -208,9 +229,11 @@ img.dashboard {
 
 .trending > div {
   display: flex;
+  font-size: 0.8rem;
 }
 
 .trending img {
-  max-height: 50px;
+  width: 30%;
+  max-height: 40px;
   margin-right: 20px;
 }
