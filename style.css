@@ -12,13 +12,13 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 0.8fr 6fr;
 }
 
 .sidebar {
   background-color: rgb(0, 162, 255);
   display: grid;
-  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 3fr;
   row-gap: 20px;
   color: white;
   font-weight: 700;
@@ -52,7 +52,7 @@ img.dashboard {
 
 .right-screen {
   display: grid;
-  grid-template-rows: 150 700px;
+  grid-template-rows: 150px 700px;
 }
 
 .header {
@@ -189,14 +189,20 @@ img.dashboard {
 }
 
 .main-right {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1rem auto;
 }
 
 .subheading {
   font-weight: 700;
-  padding-bottom: 20px;
+}
+
+.news {
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+  align-items: space-evenly;
 }
 
 .announcements {
@@ -204,12 +210,10 @@ img.dashboard {
   border-radius: 5px;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
   padding: 10px 30px 10px 30px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   overflow: hidden;
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .announcements hr {
@@ -233,7 +237,6 @@ img.dashboard {
 }
 
 .trending img {
-  width: 30%;
   max-height: 40px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
